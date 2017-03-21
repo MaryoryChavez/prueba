@@ -28,4 +28,3 @@ $('.menu-btn').on('click', function () {
     }
 
 });
-
