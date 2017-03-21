@@ -1,0 +1,122 @@
+header {
+  text-transform: uppercase;
+  background-color: #98dbc6;
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.l-header {
+  height: 50px;
+  position: relative; }
+
+button {
+  background-color: #88c7b3;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  line-height: 1;
+  padding: .75em 1em;
+  font-size: 1.1em;
+  text-decoration: none; }
+  button:hover {
+    background-color: #65b79d;
+    color: white; }
+
+.menu-btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+@media (max-width: 768px) {
+  .logo {
+    float: none; }
+
+  .menu-btn {
+    display: block; } }
+.menu {
+  float: right; }
+  .menu-list {
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+    list-style: none; }
+  .menu-item {
+    float: left;
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.1em; }
+  .menu-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: em(80, 16);
+    height: em(80, 16);
+    padding: 0 1.5em;
+    word-wrap: no-wrap;
+    transition: all .3s ease; }
+    .menu-link:hover, .menu-link:focus {
+      background: #88c7b3;
+      color: #fff; }
+
+@media (max-width: 768px) {
+  .l-header {
+    height: 80px; }
+
+  .menu {
+    float: none;
+    padding-left: 0px; }
+    .menu-item {
+      display: block;
+      float: none;
+      transform: translateX(-100%);
+      position: relative;
+      top: 80px;
+      transition: all .3s ease-out; }
+      .menu-item-play {
+        display: block;
+        transform: translateX(0);
+        width: 150%; }
+    .menu-item + .menu-item {
+      border-top: 1px solid #77bfa8; }
+    .menu-link {
+      background: #88c7b3;
+      position: relative;
+      padding: 5px 0px;
+      padding-left: 20px;
+      left: -20px; }
+      .menu-link:hover {
+        background: #65b79d; }
+
+  #menu-list {
+    padding-left: 0px; } }
+#hero {
+  width: 100%; }
+
+#lienzo {
+  background-color: #98dbc6;
+  height: 550px;
+  width: 100%;
+  position: relative;
+  top: 35px; }
+
+html body * {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  color: #fff; }
+
+/*
+#hero{
+    background-color: $color-header;
+    height: 600px;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    top: -20px;
+}
+*/
+
+/*# sourceMappingURL=main.css.map */

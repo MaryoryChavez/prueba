@@ -1,0 +1,21 @@
+@import "menu";
+@import "hero";
+
+$color-header: #98dbc6;
+
+html body *{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+/*
+#hero{
+    background-color: $color-header;
+    height: 600px;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    top: -20px;
+}
+*/
