@@ -1,0 +1,18 @@
+#sobre_mi {
+    border: 3px solid #ffba00;
+    & *{
+        border: 3px solid green;
+    }
+    #texto,
+    #help_you {
+        width: 50%;
+    }
+
+    #help_you{
+        padding-top: 10px;
+        h1{
+            font-size: 2em;
+            padding-top: 10px;
+        }
+    }
+}

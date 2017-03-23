@@ -10,38 +10,105 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,600,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
 <body>
-   <header>
-       <div class="l-header">
-           <div class="logo">
-           </div>
-           <button class="menu-btn">Menu</button>
-           <nav class="menu">
-               <ul id="menu-list">
-                   <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Sobre Mi</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Habilidades</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Portafolio</a></li>
-                   <li class="menu-item"><a href="#" class="menu-link">Contacto</a></li>
-               </ul>
-           </nav>
-       </div>
-   </header>
-
-   <div id="hero">
-       <div id="lienzo">
-        <div class="leter">
-            <div id="maquinas"></div>
+    <header>
+        <div class="l-header">
+            <div class="logo">
+            </div>
+            <button class="menu-btn">Menu</button>
+            <nav class="menu">
+                <ul id="menu-list">
+                    <li class="menu-item"><a href="#hero" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#sobre_mi" class="menu-link">Sobre Mi</a></li>
+                    <li class="menu-item"><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                    <li class="menu-item"><a href="#works" class="menu-link">Portafolio</a></li>
+                    <li class="menu-item"><a href="#contacto" class="menu-link">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-                <iframe src="Sintítulo.html" frameborder="0" scrolling="no"></iframe>
-       </div>
-   </div>
-    
-    <div id="sobre_mi">
-        
-    </div>
+    </header>
+
+    <section id="hero">
+        <div id="lienzo">
+            <div class="leter">
+                <div id="maquinas"></div>
+            </div>
+            <iframe src="Sintítulo.html" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+
+    <section id="sobre_mi" class="container-fluid">
+        <div id="texto">
+            <h1>Sobre mi</h1>
+            <p>Soy una diseñadora y programadora web procedente de Perú especializada en Front-End.</p>
+
+            <p>Mi pasión es el mundo digital y la programación, donde encuentro una mezcla perfecta entre el arte, la algoritmia y la creatividad.</p>
+
+            <p>Soy autodidacta, siempre estoy en busca de cosas nuevas para aprender, es así como llegué a Laboratoria, donde además de aprender sobre front-end aprendí a trabajar en equipo usando metodologías ágiles.</p>
+        </div>
+        <div id="help_you">
+            <h1>¿Cómo puedo ayudarte?</h1>
+
+            <p><b>Diseño:</b> Sigo la corriente minimalista. Me centrare en que la transmisión del mensaje que desees dar sea correcta y ligera.</p>
+
+            <p><b>Programación:</b> Me encargaré de que tu sitio web funcione en todos los dispositivos utilizando las herramientas adecuadas.</p>
+
+        </div>
+    </section>
+
+    <section id="habilidades" class="container-fluid">
+        <div class="col-sm-12" id="caja">
+            <div id="logo">
+                <ul>
+                    <li><img src="image/logo_bootstrap.gif" alt=""></li>
+                    <li><img src="image/logo_fundation.png" alt=""></li>
+                    <li><img src="image/logo_jquery.gif" alt=""></li>
+                    <li><img src="image/logo_vanilla.png" alt=""></li>
+                    <li><img src="image/logo_sass.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="col-sm-6" id="skills">
+                <h1>Habilidades <br>Web</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="container-fluid">
+        <div id="principlaes">
+            <h1>principales</h1>
+            <ul>
+                <li>Lyft</li>
+                <li>whatsApp cliente</li>
+                <li>Danza Arte</li>
+            </ul>
+        </div>
+        <div id="secundarios">
+            <h1>trabajos</h1>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto" class="container-fluid">
+        <h1>contacto</h1>
+        <p>¿Quieres que sea parte de tu gran proyecto? Contactame</p>
+        <ul>
+            <li>LinkedIn</li>
+            <li>Github</li>
+            <li>Número celular</li>
+            <li>gmail</li>
+        </ul>
+    </section>
+
 
     <script src="js/main.js"></script>
 </body>

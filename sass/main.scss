@@ -1,14 +1,35 @@
-@import "menu";
-@import "hero";
 
 $color-header: #98dbc6;
 
 html body *{
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
-    color: #fff;
 }
 
+#sobre_mi, #habilidades,#works,#contacto{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 30px;
+    padding-left: 30px;
+        p {
+            font-size: 18px;
+            font-weight: 200;
+            padding-left: 50px;
+        }
+    h1{
+            font-family: 'Lobster', cursive;
+            font-size: 3.5em;
+        text-align: center;
+        padding-left: 0;
+        }
+}
+
+@import "menu";
+@import "hero";
+@import "sobremi";
+@import "habilidades";
+@import "works";
+@import "contacto";
 /*
 #hero{
     background-color: $color-header;
