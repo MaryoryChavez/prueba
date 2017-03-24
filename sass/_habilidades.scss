@@ -1,11 +1,11 @@
-#habilidades {
+    #habilidades {
     text-align: left;
 }
 
-#caja{
+#caja {
     height: 100%;
     display: table;
-    position: relative
+    position: relative;
 }
 
 #skills {
@@ -14,12 +14,15 @@
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+    p {
+        padding-left: 0;
+    }
 }
 
 #logo {
     width: 640px;
-    ul{
-        text-align: center;
+    ul {
+        text-align: left;
         padding: 0;
     }
     li {
@@ -48,6 +51,38 @@
         &:nth-child(5) {
             img {
                 width: 150px;
+            }
+        }
+    }
+}
+
+#logo2{
+    width: 100%;
+    ul{
+        padding: 0;
+        text-align: left;
+        li{
+            display: inline-block;
+            padding: 10px 10px;
+            &:nth-child(1){
+                img{
+                    width: 200px;
+                }
+            }
+            &:nth-child(2){
+                img{
+                    width: 150px;
+                }
+            }
+            &:nth-child(3){
+                img{
+                    width: 300px;
+                }
+            }
+            &:nth-child(4){
+                img{
+                    width: 130px;
+                }
             }
         }
     }

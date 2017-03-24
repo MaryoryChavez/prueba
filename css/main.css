@@ -1,25 +1,44 @@
 html body * {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400; }
+  font-family: 'Kanit', sans-serif; }
 
-#sobre_mi, #habilidades, #works, #contacto {
-  padding-top: 150px;
-  padding-bottom: 150px;
+#sobre_mi,
+#habilidades,
+#works,
+#contacto {
+  padding-top: 90px;
+  padding-bottom: 100px;
   padding-right: 30px;
   padding-left: 30px; }
-  #sobre_mi p, #habilidades p, #works p, #contacto p {
+  #sobre_mi p,
+  #habilidades p,
+  #works p,
+  #contacto p {
     font-size: 18px;
     font-weight: 200;
     padding-left: 50px; }
-  #sobre_mi h1, #habilidades h1, #works h1, #contacto h1 {
-    font-family: 'Lobster', cursive;
+  #sobre_mi h1,
+  #habilidades h1,
+  #works h1,
+  #contacto h1 {
+    font-family: "Lobster", cursive;
     font-size: 3.5em;
     text-align: center;
-    padding-left: 0; }
+    padding-left: 0;
+    font-weight: 400;
+    color: #6e7472; }
+
+b {
+  font-weight: 400 !important; }
+
+h2 {
+  font-weight: 400 !important;
+  font-size: 3em;
+  color: #6e7472;
+  font-family: 'Lobster', cursive !important; }
 
 header {
   text-transform: uppercase;
-  background-color: #98dbc6;
+  background-color: #e0ebe8;
   position: fixed;
   z-index: 900;
   width: 100%;
@@ -27,11 +46,11 @@ header {
   top: 0; }
 
 .l-header {
-  height: 50px;
+  height: 55px;
   position: relative; }
 
 button {
-  background-color: #88c7b3;
+  background-color: #d7e6e2;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.1875em;
   color: white;
@@ -41,7 +60,7 @@ button {
   font-size: 1.1em;
   text-decoration: none; }
   button:hover {
-    background-color: #65b79d;
+    background-color: #b8d2cb;
     color: white; }
 
 .menu-btn {
@@ -66,19 +85,21 @@ button {
   .menu-item {
     float: left;
     display: inline-block;
-    padding: 0px 20px;
-    font-size: 1.1em; }
+    padding: 0px 0px;
+    margin: 5px 0px;
+    font-size: 1.3em; }
   .menu-link {
     display: block;
     color: #fff;
     text-decoration: none;
     line-height: em(80, 16);
     height: em(80, 16);
-    padding: 0 1.5em;
+    padding: 0.2em 1.5em;
     word-wrap: no-wrap;
+    font-weight: 600;
     transition: all .3s ease; }
     .menu-link:hover, .menu-link:focus {
-      background: #88c7b3;
+      background: #d7e6e2;
       color: #fff; }
 
 @media (max-width: 768px) {
@@ -94,21 +115,23 @@ button {
       transform: translateX(-100%);
       position: relative;
       top: 80px;
+      margin: 0px 0px;
+      padding-left: 20px;
       transition: all .3s ease-out; }
       .menu-item-play {
         display: block;
         transform: translateX(0);
         width: 150%; }
     .menu-item + .menu-item {
-      border-top: 1px solid #77bfa8; }
+      border-top: 1px solid #c7dcd7; }
     .menu-link {
-      background: #88c7b3;
+      background: #d7e6e2;
       position: relative;
       padding: 5px 0px;
       padding-left: 20px;
       left: -20px; }
       .menu-link:hover {
-        background: #65b79d; }
+        background: #b8d2cb; }
 
   #menu-list {
     padding-left: 0px; } }
@@ -117,24 +140,25 @@ button {
   color: #fff; }
 
 #lienzo {
-  background-color: #98dbc6;
-  height: 550px;
+  background-color: #e0ebe8;
+  height: 100%;
   width: 100%;
-  position: relative;
-  padding-top: 30px;
-  top: 35px; }
-  #lienzo iframe {
-    width: 100%;
-    height: 550px !important; }
+  padding-top: 50px;
+  /*iframe {
+      width: 100%;
+      height: 550px !important;
+  }*/ }
+  #lienzo img {
+    margin-top: 100px; }
 
 .leter {
   position: absolute;
   width: 500px;
   height: 470px;
-  left: 52%;
-  top: 10%;
+  left: 50%;
+  top: 22%;
+  border-radius: 5%;
   background-color: rgba(0, 0, 0, 0.33);
-  border-radius: 10px;
   padding: 20px 100px; }
   .leter #maquinas {
     font-size: 3.5em;
@@ -146,18 +170,14 @@ button {
 @media (max-width: 768px) {
   #lienzo iframe {
     width: 100%; } }
-#sobre_mi {
-  border: 3px solid #ffba00; }
-  #sobre_mi * {
-    border: 3px solid green; }
-  #sobre_mi #texto,
-  #sobre_mi #help_you {
-    width: 50%; }
-  #sobre_mi #help_you {
+#sobre_mi #texto,
+#sobre_mi #help_you {
+  width: 50%; }
+#sobre_mi #help_you {
+  padding-top: 10px; }
+  #sobre_mi #help_you h1 {
+    font-size: 2em;
     padding-top: 10px; }
-    #sobre_mi #help_you h1 {
-      font-size: 2em;
-      padding-top: 10px; }
 
 #habilidades {
   text-align: left; }
@@ -173,11 +193,13 @@ button {
   top: 50%;
   right: 20px;
   transform: translateY(-50%); }
+  #skills p {
+    padding-left: 0; }
 
 #logo {
   width: 640px; }
   #logo ul {
-    text-align: center;
+    text-align: left;
     padding: 0; }
   #logo li {
     display: inline-block;
@@ -192,6 +214,66 @@ button {
       width: 300px; }
     #logo li:nth-child(5) img {
       width: 150px; }
+
+#logo2 {
+  width: 100%; }
+  #logo2 ul {
+    padding: 0;
+    text-align: left; }
+    #logo2 ul li {
+      display: inline-block;
+      padding: 10px 10px; }
+      #logo2 ul li:nth-child(1) img {
+        width: 200px; }
+      #logo2 ul li:nth-child(2) img {
+        width: 150px; }
+      #logo2 ul li:nth-child(3) img {
+        width: 300px; }
+      #logo2 ul li:nth-child(4) img {
+        width: 130px; }
+
+#lyft {
+  padding-top: 50px; }
+  #lyft .descripcion {
+    padding: 10px 0;
+    width: 40%; }
+    #lyft .descripcion h2 {
+      text-align: center; }
+  #lyft .imagen {
+    width: 100%;
+    position: relative; }
+    #lyft .imagen img:nth-child(1) {
+      width: 500px;
+      position: absolute;
+      top: -370px;
+      left: 55%; }
+    #lyft .imagen img:nth-child(2) {
+      width: 150px;
+      position: absolute;
+      left: 50%;
+      top: -260px; }
+
+#wsp {
+  padding-top: 13em; }
+  #wsp .imagen {
+    width: 100%;
+    position: relative; }
+    #wsp .imagen img:nth-child(1) {
+      width: 500px;
+      position: absolute;
+      top: -0px;
+      left: 1%; }
+    #wsp .imagen img:nth-child(2) {
+      width: 150px;
+      position: absolute;
+      left: 38%;
+      top: 110px; }
+  #wsp .descripcion {
+    padding: 10px 0;
+    width: 40%;
+    transform: translateX(140%); }
+    #wsp .descripcion h2 {
+      text-align: center; }
 
 /*
 #hero{
