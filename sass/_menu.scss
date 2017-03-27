@@ -1,8 +1,6 @@
-$clr0: #fff;
-$clr1: #d7e6e2;
-$fondo:#e0ebe8;
-$size-header: 1.02em;
-header {
+@import "packs";
+
+#menu {
     text-transform: uppercase;
     background-color: $fondo;
     position: fixed;
@@ -10,6 +8,7 @@ header {
     width: 100%;
     left: 0;
     top: 0;
+    font-family: $fuente2;
 }
 
 .l-header {
@@ -70,7 +69,7 @@ button {
         text-decoration: none;
         line-height: em(80, 16);
         height: em(80, 16);
-        padding: 0.2em 1.5em;
+        padding: 0.2em 1em;
         word-wrap: no-wrap;
         font-weight: 600;
         transition: all .3s ease;

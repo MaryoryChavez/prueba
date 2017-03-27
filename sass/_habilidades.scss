@@ -1,88 +1,42 @@
-    #habilidades {
-    text-align: left;
-}
-
-#caja {
-    height: 100%;
-    display: table;
-    position: relative;
-}
-
-#skills {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    p {
-        padding-left: 0;
-    }
+#habilidades {
+    padding-top: 120px;
+    @include margen;
 }
 
 #logo {
     width: 640px;
-    ul {
-        text-align: left;
-        padding: 0;
-    }
-    li {
-        display: inline-block;
-        padding: 10px 10px;
-        &:nth-child(1) {
-            img {
-                width: 200px;
+    table{
+        th{
+            text-align: center;
+            &:hover{
+                
+            }
+            img{
+                width: 50%;
             }
         }
-        &:nth-child(2) {
-            img {
-                width: 150px;
+        tr:nth-child(3){
+            th{
+                img{
+                    width: 30%;
+                }
             }
         }
-        &:nth-child(3) {
-            img {
-                width: 120px;
-            }
-        }
-        &:nth-child(4) {
-            img {
-                width: 300px;
-            }
-        }
-        &:nth-child(5) {
-            img {
-                width: 150px;
-            }
-        }
-    }
+    }    
 }
 
-#logo2{
-    width: 100%;
-    ul{
+th,tr{
+}
+
+#logo2 {
+    ul {
         padding: 0;
         text-align: left;
-        li{
-            display: inline-block;
-            padding: 10px 10px;
-            &:nth-child(1){
-                img{
-                    width: 200px;
-                }
-            }
-            &:nth-child(2){
-                img{
-                    width: 150px;
-                }
-            }
-            &:nth-child(3){
-                img{
-                    width: 300px;
-                }
-            }
-            &:nth-child(4){
-                img{
-                    width: 130px;
-                }
+        li {
+            display: inline;
+            padding: 10px 50px;
+            img{
+                width: 30%;
             }
         }
     }

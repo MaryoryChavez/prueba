@@ -1,55 +1,23 @@
-html body * {
-    font-family: 'Kanit', sans-serif;
+@import "packs";
+h1 {
+    font-family: $fuente1;
+    font-size: 2.3em;
+    font-weight: 400;
+    color: #6e7472;
 }
-$fuenteSub: 'Lobster', cursive;
 
-#sobre_mi,
-#habilidades,
-#works,
-#contacto {
-    padding-top: 90px;
-    padding-bottom: 100px;
-    padding-right: 30px;
-    padding-left: 30px;
-    p {
-        font-size: 18px;
-        font-weight: 200;
-        padding-left: 50px;
-    }
-    h1 {
-        font-family: $fuenteSub;
-        font-size: 3.5em;
-        text-align: center;
-        padding-left: 0;
-        font-weight: 400;
-        color: #6e7472;
-    }
+p {
+    font-family: $fuente2;
+    font-size: 17px;
+    font-weight: 200;
 }
 
 b{
     font-weight:400 !important;
 }
 
-h2{
-    font-weight: 400!important;
-    font-size: 3em;
-    color: #6e7472;
-    font-family: 'Lobster', cursive !important;
-}
+
 @import "menu";
 @import "hero";
 @import "sobremi";
 @import "habilidades";
-@import "works";
-@import "contacto";
-
-/*
-#hero{
-    background-color: $color-header;
-    height: 600px;
-    width: 100%;
-    font-family: 'Kanit', sans-serif;
-    position: relative;
-    top: -20px;
-}
-*/

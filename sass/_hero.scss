@@ -1,46 +1,86 @@
-$fuente:'Kanit',
-sans-serif;
 #hero {
-    width: 100%;
-    color: #fff;
+    background-color: $fondo;
+    height: 100%;
 }
 
 #lienzo {
-    background-color: $fondo;
-    height: 100%;
-    width: 100%;
-    padding-top: 50px;
-    /*iframe {
+    padding: 0px;
+    img {
         width: 100%;
-        height: 550px !important;
-    }*/
-    img{
-        margin-top: 100px;
+        padding: 0;
+        margin: 0;
     }
 }
 
-.leter {
+.mensaje {
     position: absolute;
-    width: 500px;
-    height: 470px;
-    left: 50%;
-    top: 22%;
-    border-radius: 5%;
+    top: 6.6em;
+    padding: 2em;
+    margin: 1em;
+    height: 420px;
     background-color: rgba(0, 0, 0, 0.33);
-    padding: 20px 100px;
-    #maquinas {
-        font-size: 3.5em;
-        font-family: $fuente;
+    border-radius: 5%;
+    width: 260px;
+    @include horizontally_center;
+    #letras {
+        color: #fff;
+        font-size: 2.9em;
+        font-family: $fuente2;
         text-transform: uppercase;
         text-align: center;
-        font-weight:600;
+        font-weight: 600;
     }
 }
 
-@media (max-width: 768px) {
-    #lienzo {
-        iframe {
-            width: 100%;
+@media (max-width:309px) {
+    img#min {
+        padding-top: 120px;
+    }
+    .mensaje {
+        top: 5em;
+        width: 73%;
+        height: 340px;
+        padding: 4em 2em 5em 2em;
+        #letras {
+            font-size: 2.3em;
         }
+    }
+}
+
+@media (min-width:310px) and (max-width:380px) {
+    img#min{
+        padding-top: 50px;
+    }
+    .mensaje {
+        top: 6em;
+        width: 73%;
+        height: 340px;
+        padding: 4em 2em 1em 2em;
+        #letras {
+            font-size: 2.3em;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    img#max {
+        display: none;
+    }
+}
+
+@media (min-width: 421px) {
+    img#min {
+        display: none;
+    }
+    img#max {
+        padding-top: 80px;
+    }
+    .mensaje{
+        transform: translateX(60%);
+        width: 400px;
+        padding-top: 2em;
+        padding-bottom: 2.3em;
+        top: 9em;
+        height: 340px;
     }
 }
