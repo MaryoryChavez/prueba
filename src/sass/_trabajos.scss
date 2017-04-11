@@ -1,0 +1,43 @@
+@import "packs";
+
+.imgb{
+    height: 80px;
+    width: 110px;
+    background-color: gray;
+}
+
+#trabajos {
+    h1 {
+        text-align: center;
+        color: $fondo_azul;
+        font-family: $letra_h;
+        text-transform: uppercase;
+        font-size: 3.5em;
+    }
+    .circle{
+        border-color: $fondo_azul;
+    }
+}
+
+#mocks{
+    position: relative;
+    img{
+        &:nth-child(1){
+            width: 30%;
+            position: absolute;
+            z-index: 50;
+            bottom: 0;
+            left: 0;
+        }
+        &:nth-child(2){
+            width: 90%;
+            z-index: 10;
+            left: 0;
+        }
+    }
+}
+
+#descripcion {
+    padding: 0px 20px;
+    padding-top: 20px;
+}

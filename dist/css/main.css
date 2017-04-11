@@ -1,0 +1,295 @@
+#hero {
+  background: #B09CC9;
+  background: linear-gradient(to right, #B09CC9 1%, #54485C 100%);
+  background-size: contain;
+  height: 100vh;
+  margin: 0; }
+
+#image #cua_circulo {
+  width: 13%;
+  position: absolute;
+  z-index: 0;
+  top: 30px;
+  bottom: 0px;
+  left: 50px;
+  right: 0px; }
+#image #cua_triangulo {
+  width: 13%;
+  position: absolute;
+  z-index: 0;
+  top: 100px;
+  bottom: 0px;
+  left: 300px;
+  right: 0px; }
+#image #cua_cuadrado {
+  width: 13%;
+  position: absolute;
+  z-index: 0;
+  top: 230px;
+  bottom: 0px;
+  left: 50px;
+  right: 0px; }
+#image #cua_play {
+  width: 13%;
+  position: absolute;
+  z-index: 0;
+  top: 300px;
+  bottom: 0px;
+  left: 300px;
+  right: 0px; }
+#image #me {
+  position: absolute;
+  width: 38%;
+  z-index: 900;
+  left: 70px;
+  margin-bottom: 0;
+  bottom: 0.8em; }
+
+#first_t {
+  text-align: center;
+  padding: 70px 0; }
+  #first_t #mensaje {
+    position: absolute;
+    top: 15%;
+    left: 47%; }
+    #first_t #mensaje p {
+      padding: 0;
+      margin: 0; }
+      #first_t #mensaje p:nth-child(1) {
+        font-size: 120px;
+        font-family: "Satisfy", cursive;
+        color: #F9CBFF; }
+      #first_t #mensaje p:nth-child(2) {
+        font-size: 60px;
+        font-family: "Nunito", sans-serif;
+        color: #EBEBEB;
+        font-weight: 300;
+        position: relative;
+        top: -45px; }
+      #first_t #mensaje p:nth-child(3) {
+        font-size: 80px;
+        font-family: "Satisfy", cursive;
+        color: #FD9CA9;
+        position: relative;
+        top: -70px; }
+      #first_t #mensaje p:nth-child(4) {
+        font-size: 80px;
+        font-family: "Nunito", sans-serif;
+        color: #EBEBEB;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        top: -90px; }
+
+#estand_uno {
+  width: 15%;
+  position: absolute;
+  z-index: 0;
+  top: 46%;
+  bottom: 0px;
+  left: 42%;
+  right: 0px; }
+#estand_dos {
+  width: 15%;
+  position: absolute;
+  z-index: 0;
+  top: 8%;
+  bottom: 0px;
+  left: 73%;
+  right: 0px;
+  transform: rotate(180deg); }
+
+#linea {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  top: 83%;
+  background-color: #fff;
+  z-index: 0; }
+
+#sobre_mi #foto img {
+  width: 70%;
+  border-radius: 3%;
+  box-shadow: 11px 7px 7px rgba(128, 128, 128, 0.44); }
+#sobre_mi #bio h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 3em;
+  color: #604f6f; }
+#sobre_mi #bio h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #f197a3;
+  padding-top: 40px; }
+#sobre_mi p {
+  font-family: "Open Sans", sans-serif;
+  color: #817091; }
+#sobre_mi .circle {
+  border-color: #604f6f; }
+
+#habilidades h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.5em;
+  color: #fff; }
+#habilidades p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4em;
+  color: #FD9CA9;
+  margin-bottom: 0; }
+
+#logo {
+  width: 640px; }
+  #logo ul {
+    text-align: left;
+    padding: 0; }
+  #logo li {
+    display: inline-block;
+    padding: 10px 10px; }
+    #logo li:nth-child(1) img {
+      width: 200px; }
+    #logo li:nth-child(2) img {
+      width: 150px; }
+    #logo li:nth-child(3) img {
+      width: 120px; }
+    #logo li:nth-child(4) img {
+      width: 300px; }
+    #logo li:nth-child(5) img {
+      width: 150px; }
+
+#logo2 ul {
+  padding: 0;
+  text-align: left; }
+  #logo2 ul li {
+    display: inline-block; }
+    #logo2 ul li:nth-child(1) img {
+      width: 200px; }
+    #logo2 ul li:nth-child(2) img {
+      width: 150px; }
+    #logo2 ul li:nth-child(3) img {
+      width: 300px; }
+    #logo2 ul li:nth-child(4) img {
+      width: 130px; }
+
+.imgb {
+  height: 80px;
+  width: 110px;
+  background-color: gray; }
+
+#trabajos h1 {
+  text-align: center;
+  color: #446594;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5em; }
+#trabajos .circle {
+  border-color: #446594; }
+
+#mocks {
+  position: relative; }
+  #mocks img:nth-child(1) {
+    width: 30%;
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    left: 0; }
+  #mocks img:nth-child(2) {
+    width: 90%;
+    z-index: 10;
+    left: 0; }
+
+#descripcion {
+  padding: 0px 20px;
+  padding-top: 20px; }
+
+#contacto h1 {
+  color: #fff;
+  font-size: 3.5em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 0; }
+#contacto p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4em;
+  color: #fff; }
+  #contacto p b {
+    font-size: 1.2em;
+    color: #FD9CA9; }
+#contacto .signo {
+  font-size: 7em;
+  margin: 0 !important;
+  padding: 0;
+  color: #FD9CA9; }
+#contacto .pri {
+  position: relative;
+  left: 20px;
+  top: -25px; }
+#contacto .segu {
+  position: relative;
+  right: 20px;
+  top: -15px; }
+#contacto .iconosocial {
+  color: #fff;
+  font-size: 4em;
+  padding: 25px;
+  border: 10px solid #FD9CA9;
+  border-radius: 100%;
+  margin: 0px 30px; }
+
+.margintb {
+  margin: 120px 0; }
+
+body {
+  margin: 0px; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.altura100vh {
+  height: 100vh; }
+
+.nopadding {
+  padding: 0; }
+
+#sobre_mi {
+  background-color: #EBEBEB; }
+
+#habilidades {
+  background-color: #446594; }
+
+#trabajos {
+  background-color: #fff; }
+
+#contacto {
+  background-color: #604f6f; }
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: none;
+  border: 3px solid rgba(255, 255, 255, 0);
+  transition: 1s; }
+
+a {
+  margin-top: 20px; }
+
+.mincir {
+  margin-top: 33%;
+  margin-left: 33%;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #FD9CA9;
+  border: 3px solid #FD9CA9; }
+
+#botones {
+  margin-left: 30px;
+  width: 50px; }
+
+/*# sourceMappingURL=main.css.map */

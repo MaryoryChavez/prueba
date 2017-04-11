@@ -1,0 +1,84 @@
+@import "packs";
+#habilidades{
+    h1{
+       font-family: $letra_h;
+            text-transform: uppercase;
+            margin-top: 0;
+        margin-bottom: 0;
+            font-size: 3.5em;
+        color: #fff;
+    }
+    p{
+        font-family: $letra_p;
+        font-size: 1.4em;
+        color: $rojo_sa;
+        margin-bottom: 0;
+    }
+}
+
+#logo {
+    width: 640px;
+    ul {
+        text-align: left;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        padding: 10px 10px;
+        &:nth-child(1) {
+            img {
+                width: 200px;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                width: 150px;
+            }
+        }
+        &:nth-child(3) {
+            img {
+                width: 120px;
+            }
+        }
+        &:nth-child(4) {
+            img {
+                width: 300px;
+            }
+        }
+        &:nth-child(5) {
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+#logo2{
+    ul{
+        padding: 0;
+        text-align: left;
+        li{
+            display: inline-block;
+            &:nth-child(1){
+                img{
+                    width: 200px;
+                }
+            }
+            &:nth-child(2){
+                img{
+                    width: 150px;
+                }
+            }
+            &:nth-child(3){
+                img{
+                    width: 300px;
+                }
+            }
+            &:nth-child(4){
+                img{
+                    width: 130px;
+                }
+            }
+        }
+    }
+}

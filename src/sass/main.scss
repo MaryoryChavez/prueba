@@ -1,0 +1,67 @@
+@import "packs";
+@import "hero";
+@import "sobremi";
+@import "habilidades";
+@import "trabajos";
+@import "contacto";
+
+body{
+    margin: 0px;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.altura100vh {
+    height: 100vh;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+#sobre_mi {
+    background-color: $blanco_opaco;
+}
+
+#habilidades {
+    background-color: $fondo_azul;
+}
+
+#trabajos {
+    background-color: #fff;
+}
+
+#contacto {
+    background-color: $color_h1;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: none;
+    border: 3px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+}
+
+a {
+    margin-top: 20px;
+}
+
+.mincir {
+    margin-top: 33%;
+    margin-left: 33%;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: $rojo_sa;
+    border: 3px solid $rojo_sa;
+}
+
+#botones {
+    margin-left: 30px;
+    width: 50px;
+}

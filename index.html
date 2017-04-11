@@ -4,113 +4,277 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maryory Chavez</title>
-    <link rel="stylesheet" href="css/flexboxgrid.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,600,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>maryory c.arosquipa</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="dist/socicon/style.css">
+    <link rel="stylesheet" href="dist/css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
 <body>
-    <header id="menu">
-        <div class="l-header">
-            <div class="logo">
+    <section id="hero" class="container-fluid">
+        <div class="row middle-xs altura100vh">
+            <div id="linea" style="left:0px"></div>
+            <div class="col-xs-5" id="image">
+                <img src="src/img/cuadro_circulo.svg" alt="" id="cua_circulo">
+                <img src="src/img/cuadro_triangulo.svg" alt="" id="cua_triangulo">
+                <img src="src/img/cuadro_cuadrado.svg" alt="" id="cua_cuadrado">
+                <img src="src/img/cuadro_play.svg" alt="" id="cua_play">
+                <img src="src/img/meColor.svg" alt="" id="me">
             </div>
-            <button class="menu-btn">Menu</button>
-            <nav class="menu">
-                <ul id="menu-list">
-                    <li class="menu-item"><a href="#hero" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#sobre_mi" class="menu-link">Sobre Mi</a></li>
-                    <li class="menu-item"><a href="#habilidades" class="menu-link">Habilidades</a></li>
-                    <li class="menu-item"><a href="#works" class="menu-link">Portafolio</a></li>
-                    <li class="menu-item"><a href="#contacto" class="menu-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="hero" class="row">
-        <div class="col-xs-12" id="lienzo">
-            <div class="mensaje">
-                <div id="letras"></div>
+            <div class="col-xs-6" id="first_t">
+                <img src="src/img/estanteria.svg" alt="" id="estand_uno">
+                <div id="mensaje">
+                    <p>¡Hola!</p>
+                    <p>Mi nombre es</p>
+                    <p>Maryory Chavez</p>
+                    <p>Bienvenido</p>
+                </div>
+                <img src="src/img/estanteria.svg" alt="" id="estand_dos">
             </div>
-            <img src="image/hero_home_min.svg" alt="" id="min">
-            <img src="image/hero_home.svg" alt="" id="max">
-        </div>
-    </section>
-
-    <section id="sobre_mi" class="row bottom-xs">
-        <div class="col-xs-12 col-sm-6">
-            <div id="bio">
-                <h1>Sobre mi</h1>
-                <p>Soy una diseñadora y programadora web procedente de Perú especializada en Front-End.</p>
-
-                <p>Mi pasión es el mundo digital y la programación, donde encuentro una mezcla perfecta entre el arte, la algoritmia y la creatividad.</p>
-
-                <p>Soy autodidacta, siempre estoy en busca de cosas nuevas para aprender, es así como llegué a Laboratoria, donde además de aprender sobre front-end aprendí a trabajar en equipo usando metodologías ágiles.</p>
-            </div>
-            <div id="help_you">
-                <h1>¿Cómo puedo ayudarte?</h1>
-
-                <p><b>Diseño:</b> Sigo la corriente minimalista. Me centrare en que la transmisión del mensaje que desees dar sea correcta y ligera.</p>
-
-                <p><b>Programación:</b> Me encargaré de que tu sitio web funcione en todos los dispositivos utilizando las herramientas adecuadas.</p>
-
-            </div>
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-5" id="imagen">
-            <img src="image/sala.png" alt="" id="sala">
-        </div>
-    </section>
-
-    <section id="habilidades">
-        <div class="row middle-xs center-xs">
-            <div class="col-xs-12 col-sm-6">
-                <div id="logo">
-                    <table>
-                        <tr>
-                            <th><img src="image/boostrap.png" alt=""></th>
-                            <th><img src="image/fundation.png" alt=""></th>
-                        </tr>
-                        <tr>
-                            <th><img src="image/jquery.png" alt=""></th>
-                            <th><img src="image/js.png" alt=""></th>
-                        </tr>
-                        <tr>
-                            <th colspan="2"><img src="image/sass.png" alt=""></th>
-                        </tr>
-                    </table>
+            <div class="col-xs-1" class="menu">
+                <div id="botones" class="row center-xs">
+                    <div class="circle hero">
+                            <div class="mincir"></div>
+                    </div>
+                    <div class="circle smi">
+                            <div class="mincir"></div>
+                    </div>
+                    <div class="circle skills">
+                            <div class="mincir"></div>
+                    </div>
+                    <div class="circle work">
+                            <div class="mincir"></div>
+                    </div>
+                    <div class="circle call">
+                            <div class="mincir"></div>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6" id="skills">
-                <h1>Habilidades</h1>
-                <p>Como todo web developer, poseo habilidades web y <br> de diseño escenciales para mi trabajo, y con cada dia voy aprendiendo más.</p>
+        </div>
+    </section>
+
+    <section id="sobre_mi" class="container-fluid">
+        <div class="row middle-xs altura100vh">
+            <div class="col-xs-6" id="bio">
+                <h1>Sobre mí</h1>
+                <p>Soy una diseñadora y programadora web especializada en Front-End, procedente de Perú. <br> Mi pasión es el mundo digital y la programación, donde encuentro una mezcla perfecta entre el arte, la algoritmia y la creatividad. <br> Soy autodidacta, siempre estoy en busca de cosas nuevas para aprender, es así como llegué a Laboratoria, donde además de aprender sobre front-end aprendí a trabajar en equipo usando metodologías ágiles.
+                </p>
+                <h2>¿Como puedo ayudarte?</h2>
+                <p><b>Diseño:</b> Sigo la corriente minimalista. Me centrare en que la transmisión del mensaje que desees dar sea correcta y ligera.</p>
+                <p><b>Programación:</b> Me encargaré de que tu sitio web funcione en todos los dispositivos utilizando las herramientas adecuadas.
+                </p>
+            </div>
+            <div class="col-xs-5 center-xs" id="foto">
+                <img src="src/img/mephoto.png" alt="">
+            </div>
+            <div class="col-xs-1 menu">
+                <div id="botones" class="row center-xs">
+                    <div class="circle hero">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle smi">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle skills">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle work">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle call">
+                        <div class="mincir"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row center-xs">
-            <div id="logo2" class="col-sm-12">
+    </section>
+
+    <section id="habilidades" class="container-fluid">
+        <div class="row middle-xs altura100vh">
+            <div class="col-xs-6">
+                <div id="logo">
                 <ul>
-                    <li><img src="image/affinity_designer.png" alt=""></li>
-                    <li><img src="image/illustrator.png" alt=""></li>
-                    <li><img src="image/affinity_photo.png" alt=""></li>
-                    <li><img src="image/photoshop.png" alt=""></li>
+                    <li><img src="src/img/logo_bootstrap.gif" alt=""></li>
+                    <li><img src="src/img/logo_fundation.png" alt=""></li>
+                    <li><img src="src/img/logo_jquery.gif" alt=""></li>
+                    <li><img src="src/img/logo_vanilla.png" alt=""></li>
+                    <li><img src="src/img/logo_sass.png" alt=""></li>
                 </ul>
             </div>
         </div>
-
+            <div class="col-xs-5 center-xs">
+                <h1>Habilidades</h1>
+                <p>¡Habilidades y herramientas<br>a la orden del día!</p>
+            </div>
+            <div class="col-xs-1 menu">
+                <div id="botones" class="row center-xs">
+                    <div class="circle hero">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle smi">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle skills">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle work">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle call">
+                        <div class="mincir"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="trabajos">
+    <section id="trabajos" class="container-fluid">
+        <div class="row middle-xs altura100vh">
+            <div class="col-xs-5">
+                <h1>Trabajos</h1>
+                <div class="row trabajos">
+                    <div class="col-xs-12 center-xs">
+                        <table>
+                            <tr>
+                                <th>
+                                    <img src="src/img/lyft.png" alt="" class="imgb">
+                                </th>
+                                <th>
+                                    <img src="src/img/bicis.png" alt="" class="imgb">
+                                </th>
+                                <th>
+                                    <img src="src/img/todoapp.png" alt="" class="imgb">
+                                </th>
+                                <th>
+                                    <img src="src/img/wsp.png" alt="" class="imgb">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <img src="src/img/user360.png" alt="" class="imgb">
+                                </th>
+                                <th>
+                                    <img src="src/img/blog.png" alt="" class="imgb">
+                                </th>
+                                <th>
+                                    <img src="src/img/danza.png" alt="" class="imgb">
+                                </th>
+                                <th>
+                                    <img src="src/img/danza.png" alt="" class="imgb">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="imgb"></div>
+                                </th>
+                                <th>
+                                    <div class="imgb"></div>
+                                </th>
+                                <th>
+                                    <div class="imgb"></div>
+                                </th>
+                                <th>
+                                    <div class="imgb"></div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-xs-6">
+                <div class="row end-xs" id="mocks">
+                    <div class="col-xs-12">
+                        <img src="src/img/cel.png" alt="">
+                        <img src="src/img/pc.png" alt="">
+                    </div>
+                </div>
+                <div class="row" id="descripcion">
+                    <div class="col-xs-12">
+                        <h2>Lorem</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus possimus tenetur necessitatibus repellendus, asperiores animi ex ipsa, labore dolor, quas nostrum quisquam magnam. Non doloremque excepturi amet, alias odit ullam!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 menu">
+                <div id="botones" class="row center-xs">
+                    <div class="circle hero">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle smi">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle skills">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle work">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle call">
+                        <div class="mincir"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contacto">
-
+    <section id="contacto" class="container-fluid">
+        <div class="row middle-xs altura100vh">
+            <div class="col-xs-5">
+                <div class="row center-xs margintb">
+                    <div class="col-xs-12">
+                        <a href=""><span class="socicon-linkedin iconosocial"></span></a>
+                        <a href="https://github.com/MaryoryChavez"><span class="socicon-github iconosocial"></span></a>
+                    </div>
+                </div>
+                <div class="row center-xs margintb">
+                    <div class="col-xs-12">
+                        <a href=""><span class="socicon-mail iconosocial"></span></a>
+                        <a href=""><span class="socicon-whatsapp iconosocial"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 center-xs">
+                <h1>Contacto</h1>
+                <div class="row middle-xs">
+                    <div class="col-xs-1 nopadding">
+                        <p class="signo pri">¿</p>
+                    </div>
+                    <div class="col-xs-10 nopadding">
+                        <p>Quieres que sea parte de tu gran proyecto <br> <b>Contactame</b></p>
+                    </div>
+                    <div class="col-xs-1 nopadding">
+                        <p class="signo segu">?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1 menu">
+                <div id="botones" class="row center-xs">
+                    <div class="circle hero">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle smi">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle skills">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle work">
+                        <div class="mincir"></div>
+                    </div>
+                    <div class="circle call">
+                        <div class="mincir"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="src/js/jquery.min.js"></script>
+    <script src="node_modules/animejs/anime.min.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 
 </html>

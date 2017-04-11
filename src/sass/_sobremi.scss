@@ -1,0 +1,33 @@
+@import "packs";
+#sobre_mi {
+    #foto {
+        img {
+            width: 70%;
+            border-radius: 3%;
+            box-shadow: 11px 7px 7px rgba(128, 128, 128, 0.44);
+        }
+    }
+    #bio {
+        h1 {
+            font-family: $letra_h;
+            text-transform: uppercase;
+            margin-top: 0;
+            font-size: 3em;
+            color: $color_h1;
+        }
+        h2 {
+            font-family: $letra_h;
+            text-transform: uppercase;
+            font-size: 1.8em;
+            color: $color2_h1;
+            padding-top: 40px;
+        }
+    }
+    p {
+        font-family: $letra_p;
+        color: $color_texto;
+    }
+    .circle{
+        border-color: $color_h1;
+    }
+}
