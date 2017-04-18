@@ -1,19 +1,20 @@
 @import "packs";
-#sobre_mi {
-    #foto {
-        img {
-            width: 70%;
-            border-radius: 3%;
-            box-shadow: 11px 7px 7px rgba(128, 128, 128, 0.44);
-        }
+#foto {
+    img {
+        width: 100%;
+        border-radius: 3%;
+        box-shadow: 11px 7px 7px rgba(128, 128, 128, 0.44);
     }
-    #bio {
+}
+
+.bio {
         h1 {
             font-family: $letra_h;
             text-transform: uppercase;
-            margin-top: 0;
-            font-size: 3em;
+            margin-top: 2em;
+            font-size: 2em;
             color: $color_h1;
+            text-align: center;
         }
         h2 {
             font-family: $letra_h;
@@ -21,13 +22,60 @@
             font-size: 1.8em;
             color: $color2_h1;
             padding-top: 40px;
+            text-align: center;
         }
     }
-    p {
-        font-family: $letra_p;
-        color: $color_texto;
+
+
+@media (min-width:768px) {
+    #foto {
+        img{
+            width: 65%;
+        }
     }
-    .circle{
-        border-color: $color_h1;
+}
+
+@media (max-width:767px) {
+    #sobre_mi{
+        p{
+            text-align: center;
+        }
+        .menu{
+            margin-bottom: 60px !important;
+        }
+    }
+}
+
+
+
+@media (min-width:400px) and (max-width:499px){
+    #foto{
+        img{
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width:500px) and (max-width:599px){
+    #foto{
+        img{
+            width: 65%;
+        }
+    }
+}
+
+@media (min-width:600px) and (max-width:699px){
+    #foto{
+        img{
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width:700px)  and (max-width:767px){
+    #foto{
+       img{
+            width: 40%;
+        }
     }
 }

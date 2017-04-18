@@ -1,9 +1,10 @@
 @import "packs";
-@import "hero";
+@import "header";
 @import "sobremi";
 @import "habilidades";
 @import "trabajos";
 @import "contacto";
+@import "menu";
 
 body{
     margin: 0px;
@@ -14,12 +15,22 @@ body{
     margin-right: 0;
 }
 
+.container-fluid{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .altura100vh {
     height: 100vh;
 }
 
 .nopadding {
     padding: 0;
+}
+
+header {
+    background: $morado_claro;
+    background: linear-gradient(to right, $morado_claro 1%, $morado_oscuro 100%);
 }
 
 #sobre_mi {
@@ -38,30 +49,21 @@ body{
     background-color: $color_h1;
 }
 
-.circle {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: none;
-    border: 3px solid rgba(255, 255, 255, 0);
-    transition: 1s;
-}
-
 a {
     margin-top: 20px;
 }
 
-.mincir {
-    margin-top: 33%;
-    margin-left: 33%;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background-color: $rojo_sa;
-    border: 3px solid $rojo_sa;
+p {
+        font-family: $letra_p;
+        color: $color_texto;
+    }
+
+a{
+    text-decoration: none;
 }
 
-#botones {
-    margin-left: 30px;
-    width: 50px;
+@media (max-width:767px){
+    .altura100vh{
+        height: auto;
+    }
 }
