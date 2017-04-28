@@ -1,6 +1,9 @@
+header {
+  background: #B09CC9;
+  background: linear-gradient(to right, #B09CC9 1%, #54485C 100%); }
+
 #tituloHeader {
-  text-align: center;
-  padding: 25px 0; }
+  text-align: center; }
   #tituloHeader #mensaje p {
     padding: 0;
     margin: 0; }
@@ -12,23 +15,17 @@
       font-size: 37px;
       font-family: "Nunito", sans-serif;
       color: #EBEBEB;
-      font-weight: 300;
-      position: relative;
-      top: -20px; }
+      font-weight: 300; }
     #tituloHeader #mensaje p:nth-child(3) {
       font-size: 46px;
       font-family: "Satisfy", cursive;
-      color: #FD9CA9;
-      position: relative;
-      top: -25px; }
+      color: #FD9CA9; }
     #tituloHeader #mensaje p:nth-child(4) {
       font-size: 35px;
       font-family: "Nunito", sans-serif;
       color: #EBEBEB;
       font-weight: bold;
-      text-transform: uppercase;
-      position: relative;
-      top: -25px; }
+      text-transform: uppercase; }
 
 #estand_uno {
   width: 50%;
@@ -67,6 +64,15 @@
     display: none; }
   #estand_dos {
     display: none; } }
+@media (max-width: 767px) {
+  #me {
+    margin-top: 20px; }
+
+  header {
+    padding-top: 90px; } }
+@media (min-width: 768px) {
+  header {
+    padding-top: 0px; } }
 @media (max-width: 400px) {
   #me {
     bottom: 11px; } }
@@ -78,20 +84,11 @@
     bottom: 50px; } }
 @media (min-width: 521px) and (max-width: 565px) {
   #me {
-    bottom: 36px;
-    width: 86%; } }
-@media (min-width: 566px) and (max-width: 630px) {
-  #me {
-    bottom: 10px;
-    width: 70%; } }
-@media (min-width: 631px) and (max-width: 730px) {
-  #me {
-    bottom: 30px;
-    width: 64%; } }
-@media (min-width: 731px) and (max-width: 767px) {
-  #me {
-    bottom: 30px;
-    width: 57%; } }
+    bottom: 3px;
+    width: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative; } }
 @media (min-width: 768px) {
   #cuadrosme #cua_circulo {
     width: 13%;
@@ -128,7 +125,7 @@
 
   #me {
     position: absolute;
-    width: 38%;
+    width: 500px;
     z-index: 900;
     left: 70px;
     margin-bottom: 0;
@@ -157,7 +154,8 @@
     padding: 70px 0; }
     #tituloHeader #mensaje {
       position: absolute;
-      top: 15%;
+      top: 50%;
+      transform: translateY(-50%);
       left: 47%; }
       #tituloHeader #mensaje p {
         padding: 0;
@@ -170,23 +168,53 @@
           font-size: 5vw;
           font-family: "Nunito", sans-serif;
           color: #EBEBEB;
-          font-weight: 300;
-          position: relative;
-          top: -45px; }
+          font-weight: 300; }
         #tituloHeader #mensaje p:nth-child(3) {
           font-size: 6vw;
           font-family: "Satisfy", cursive;
-          color: #FD9CA9;
-          position: relative;
-          top: -70px; }
+          color: #FD9CA9; }
         #tituloHeader #mensaje p:nth-child(4) {
           font-size: 6vw;
           font-family: "Nunito", sans-serif;
           color: #EBEBEB;
           font-weight: bold;
-          text-transform: uppercase;
-          position: relative;
-          top: -90px; } }
+          text-transform: uppercase; } }
+@media (min-width: 914px) and (max-width: 1070px) {
+  #cuadrosme #cua_circulo {
+    width: 20%;
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    bottom: 0px;
+    left: 50px;
+    right: 0px; }
+  #cuadrosme #cua_play {
+    width: 20%;
+    position: absolute;
+    z-index: 0;
+    top: 242px;
+    bottom: 0px;
+    left: 229px;
+    right: 0px; } }
+@media (min-width: 768px) and (max-width: 910px) {
+  #cuadrosme {
+    transition: 1s; }
+    #cuadrosme #cua_circulo {
+      width: 23%;
+      position: absolute;
+      z-index: 0;
+      top: 30px;
+      bottom: 0px;
+      left: 50px;
+      right: 0px; }
+    #cuadrosme #cua_play {
+      width: 23%;
+      position: absolute;
+      z-index: 0;
+      top: 233px;
+      bottom: 0px;
+      left: 172px;
+      right: 0px; } }
 #foto img {
   width: 100%;
   border-radius: 3%;
@@ -195,7 +223,6 @@
 .bio h1 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  margin-top: 2em;
   font-size: 2em;
   color: #604f6f;
   text-align: center; }
@@ -206,6 +233,8 @@
   color: #f197a3;
   padding-top: 40px;
   text-align: center; }
+.bio p {
+  font-size: 0.9em; }
 
 @media (min-width: 768px) {
   #foto img {
@@ -279,7 +308,8 @@
   color: #446594;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-size: 3.5em; }
+  font-size: 2em;
+  margin-bottom: 22px; }
 #trabajos .circle {
   border-color: #446594; }
 #trabajos table {
@@ -321,14 +351,16 @@
     margin-bottom: 50px; } }
 #contacto h1 {
   color: #fff;
-  font-size: 3.5em;
+  font-size: 2em;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 #contacto p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4em;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
   #contacto p b {
     font-size: 1.2em;
     color: #FD9CA9; }
@@ -350,11 +382,19 @@
   font-size: 4em;
   padding: 25px;
   border: 10px solid #FD9CA9;
-  border-radius: 100%;
-  margin: 0px 30px; }
+  border-radius: 100%; }
+#contacto th {
+  padding: 50px 5px; }
 
 .margintb {
   margin: 120px 0; }
+
+@media (max-width: 767px) {
+  #contacto .pri {
+    left: -20px; } }
+.menu ul {
+  position: fixed;
+  z-index: 900; }
 
 .menu li {
   display: inline-block;
@@ -371,14 +411,8 @@
   width: 30px;
   transition: 1.5s; }
 
-header li:nth-child(1) .circle {
-  border-color: #fff; }
-
-#sobre_mi li:nth-child(2) .circle {
-  border-color: #604f6f; }
-
-#habilidades li:nth-child(3) .circle {
-  border-color: #fff; }
+.menu li:nth-child(1) .circle {
+  border-color: #F9CBFF; }
 
 .mincir {
   border-radius: 50%;
@@ -404,6 +438,9 @@ header li:nth-child(1) .circle {
   left: -40%; }
 
 @media (min-width: 768px) {
+  #menu1 {
+    display: none; }
+
   .circle {
     height: 40px;
     width: 40px;
@@ -418,23 +455,31 @@ header li:nth-child(1) .circle {
     transform: translateX(-73%) !important;
     top: 8px;
     text-align: center;
-    padding: 5px 10px; } }
+    padding: 5px 10px; }
+
+  .menu ul {
+    top: 50%;
+    transform: translateY(-50%); }
+
+  .menu li {
+    display: block; } }
+@media (max-width: 767px) {
+  .menu ul {
+    text-align: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.22);
+    width: 100%; }
+
+  #botones {
+    padding: 10px 0; }
+
+  #menu2 {
+    display: none; } }
 body {
   margin: 0px; }
 
-.row {
-  margin-left: 0;
-  margin-right: 0; }
-
-.container-fluid {
-  padding-left: 10px;
-  padding-right: 10px; }
-
 .altura100vh {
   height: 100vh; }
-
-.nopadding {
-  padding: 0; }
 
 header {
   background: #B09CC9;
@@ -464,6 +509,25 @@ a {
 
 @media (max-width: 767px) {
   .altura100vh {
-    height: auto; } }
+    height: auto; }
+
+  header {
+    padding-bottom: 20px; }
+
+  #sobre_mi {
+    padding-top: 90px;
+    padding-bottom: 20px; }
+
+  #habilidades {
+    padding-top: 90px;
+    padding-bottom: 20px; }
+
+  #trabajos {
+    padding-top: 90px;
+    padding-bottom: 20px; }
+
+  #contacto {
+    padding-top: 90px;
+    padding-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */

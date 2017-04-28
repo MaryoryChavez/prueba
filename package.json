@@ -9,6 +9,7 @@
   "author": "maryory chavez",
   "license": "ISC",
   "dependencies": {
+    "bulma": "^0.4.1",
     "flexboxgrid": "^6.3.1",
     "jquery": "^1.12.4"
   },

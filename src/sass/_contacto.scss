@@ -1,16 +1,20 @@
 @import "packs";
+
+
 #contacto {
     h1 {
         color: #fff;
-        font-size: 3.5em;
+        font-size: 2em;
         font-family: $letra_h;
         text-transform: uppercase;
         margin: 0;
+        text-align: center;
     }
     p {
         font-family: $letra_p;
         font-size: 1.4em;
         color: #fff;
+        text-align: center;
         b {
             font-size: 1.2em;
             color: $rojo_sa;
@@ -38,7 +42,9 @@
         padding: 25px;
         border: 10px solid $rojo_sa;
         border-radius: 100%;
-        margin:0px 30px;
+    }
+    th{
+        padding: 50px 5px;
     }
 }
 
@@ -46,3 +52,10 @@
     margin: 120px 0;
 }
 
+@media (max-width:767px){
+    #contacto{
+        .pri {
+        left: -20px;
+    } 
+    }
+}

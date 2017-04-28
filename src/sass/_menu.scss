@@ -1,3 +1,8 @@
+.menu ul{
+    position: fixed;
+    z-index: 900;
+}
+
 .menu li {
     display: inline-block;
     position: relative;
@@ -16,16 +21,8 @@
     transition: 1.5s;
 }
 
-header li:nth-child(1) .circle{
-    border-color: #fff;
-}
-
-#sobre_mi li:nth-child(2) .circle{
-    border-color: #604f6f;
-}
-
-#habilidades li:nth-child(3) .circle{
-    border-color: #fff;
+.menu li:nth-child(1) .circle{
+    border-color: #F9CBFF;
 }
 
 .mincir {
@@ -54,6 +51,9 @@ header li:nth-child(1) .circle{
 }
 
 @media (min-width:768px) {
+    #menu1{
+        display: none;
+    }
     .circle {
         height: 40px;
         width: 40px;
@@ -69,5 +69,33 @@ header li:nth-child(1) .circle{
         top: 8px;
         text-align: center;
         padding: 5px 10px;
+    }
+    
+    .menu ul{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .menu li {
+    display: block;
+}
+}
+
+@media (max-width:767px){
+    .menu{
+        ul{
+            text-align: center;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.22);
+            width: 100%;
+        }
+    }
+    
+    #botones{
+        padding: 10px 0;
+    }
+    
+    #menu2{
+        display: none;
     }
 }
