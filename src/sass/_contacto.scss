@@ -1,6 +1,5 @@
 @import "packs";
 
-
 #contacto {
     h1 {
         color: #fff;
@@ -38,14 +37,12 @@
     }
     .iconosocial {
         color: #fff;
-        font-size: 4em;
+        font-size: 3.5em;
         padding: 25px;
         border: 10px solid $rojo_sa;
         border-radius: 100%;
     }
-    th{
-        
-    }
+
 }
 
 .margintb{
@@ -56,6 +53,18 @@
     #contacto{
         .pri {
         left: -20px;
-    } 
+        } 
+        th{
+            padding: 50px 0;
+        }
+    }
+    #contacto1{
+         display: none;
+        }
+}
+
+@media (min-width:768px){
+    #contacto2{
+        display: none;
     }
 }
